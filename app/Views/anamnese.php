@@ -62,9 +62,7 @@
                 </div>
             </div>
           
-            
-        
-            <input type="submit" value="Enviar Dados" class="btn-submit">
+                <input type="submit" value="Enviar Dados" class="btn-submit">
 
             <br>
             <br>

@@ -13,6 +13,11 @@
             <div class="logo">
                 <img class="img-logo" src="http://192.168.50.177/grupo02/sistema/assets/img/logo-uni.png" alt="Univiçosa">
             </div>
+
+            <div class="cadastro">
+                <a href="http://192.168.50.177/grupo02/sistema/public/index.php/registrar">Cadastrar</a>
+            </div>
+
             <div class="sair">
                 <a href="http://192.168.50.177/grupo02/sistema/public">Sair</a>
             </div>

@@ -44,8 +44,6 @@
                 </div>
             </div>
           
-            
-        
             <input type="submit" value="Enviar Dados" class="btn-submit">
         
         </form>

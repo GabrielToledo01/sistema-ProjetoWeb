@@ -35,6 +35,23 @@ header{
     width: 100%;
 }
 
+.cadastro{
+    display: flex;
+    align-items: center;
+}
+
+.cadastro a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.cadastro a:hover{
+    font-size: 25px;
+    transition: 140ms;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
 .sair{
     display: flex;
     align-items: center;
