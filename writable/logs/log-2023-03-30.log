@@ -1,0 +1,162 @@
+INFO - 2023-03-30 22:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 22:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-30 22:59:53 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getMethod
+in APPPATH/Controllers/Registrar.php on line 13.
+ 1 APPPATH/Controllers/Registrar.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Registrar->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-30 23:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-30 23:00:52 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getMethod
+in APPPATH/Controllers/Registrar.php on line 13.
+ 1 APPPATH/Controllers/Registrar.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Registrar->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-30 23:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-30 23:00:53 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getMethod
+in APPPATH/Controllers/Registrar.php on line 13.
+ 1 APPPATH/Controllers/Registrar.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Registrar->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-30 23:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-30 23:00:53 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getMethod
+in APPPATH/Controllers/Registrar.php on line 13.
+ 1 APPPATH/Controllers/Registrar.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Registrar->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-30 23:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-30 23:08:23 --> mysqli_sql_exception: Table 'grupo02.usuario' doesn't exist in /var/www/html/grupo02/sistema/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/grupo02/sistema/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/grupo02/sistema/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/grupo02/sistema/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/grupo02/sistema/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/grupo02/sistema/system/Validation/StrictRules/Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/grupo02/sistema/system/Validation/Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique()
+#6 /var/www/html/grupo02/sistema/system/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules()
+#7 /var/www/html/grupo02/sistema/system/BaseModel.php(1453): CodeIgniter\Validation\Validation->run()
+#8 /var/www/html/grupo02/sistema/system/BaseModel.php(745): CodeIgniter\BaseModel->validate()
+#9 /var/www/html/grupo02/sistema/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#10 /var/www/html/grupo02/sistema/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#11 /var/www/html/grupo02/sistema/app/Controllers/Registrar.php(18): CodeIgniter\BaseModel->save()
+#12 /var/www/html/grupo02/sistema/system/CodeIgniter.php(934): App\Controllers\Registrar->index()
+#13 /var/www/html/grupo02/sistema/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#14 /var/www/html/grupo02/sistema/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#15 /var/www/html/grupo02/sistema/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2023-03-30 23:08:23 --> Table 'grupo02.usuario' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Validation/StrictRules/Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/Validation/Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique()
+ 4 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules()
+ 5 SYSTEMPATH/BaseModel.php(1453): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH/BaseModel.php(745): CodeIgniter\BaseModel->validate()
+ 7 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/Registrar.php(18): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Registrar->index()
+11 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-30 23:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-30 23:12:01 --> mysqli_sql_exception: Table 'grupo02.usuario' doesn't exist in /var/www/html/grupo02/sistema/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/grupo02/sistema/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/grupo02/sistema/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/grupo02/sistema/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/grupo02/sistema/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/grupo02/sistema/system/Validation/StrictRules/Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/grupo02/sistema/system/Validation/Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique()
+#6 /var/www/html/grupo02/sistema/system/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules()
+#7 /var/www/html/grupo02/sistema/system/BaseModel.php(1453): CodeIgniter\Validation\Validation->run()
+#8 /var/www/html/grupo02/sistema/system/BaseModel.php(745): CodeIgniter\BaseModel->validate()
+#9 /var/www/html/grupo02/sistema/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#10 /var/www/html/grupo02/sistema/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#11 /var/www/html/grupo02/sistema/app/Controllers/Registrar.php(18): CodeIgniter\BaseModel->save()
+#12 /var/www/html/grupo02/sistema/system/CodeIgniter.php(934): App\Controllers\Registrar->index()
+#13 /var/www/html/grupo02/sistema/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#14 /var/www/html/grupo02/sistema/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#15 /var/www/html/grupo02/sistema/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2023-03-30 23:12:01 --> Table 'grupo02.usuario' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Validation/StrictRules/Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/Validation/Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique()
+ 4 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules()
+ 5 SYSTEMPATH/BaseModel.php(1453): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH/BaseModel.php(745): CodeIgniter\BaseModel->validate()
+ 7 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/Registrar.php(18): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Registrar->index()
+11 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-30 23:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-30 23:13:14 --> Undefined index: senha
+in APPPATH/Models/UsuarioModel.php on line 50.
+ 1 APPPATH/Models/UsuarioModel.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(1562): App\Models\UsuarioModel->hashsenha()
+ 3 SYSTEMPATH/BaseModel.php(779): CodeIgniter\BaseModel->trigger()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Registrar.php(18): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Registrar->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-30 23:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-30 23:14:29 --> Undefined index: senha
+in APPPATH/Models/UsuarioModel.php on line 50.
+ 1 APPPATH/Models/UsuarioModel.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(1562): App\Models\UsuarioModel->hashSenha()
+ 3 SYSTEMPATH/BaseModel.php(779): CodeIgniter\BaseModel->trigger()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Registrar.php(18): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Registrar->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-30 23:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-30 23:14:44 --> Undefined index: senha
+in APPPATH/Models/UsuarioModel.php on line 50.
+ 1 APPPATH/Models/UsuarioModel.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(1562): App\Models\UsuarioModel->hashSenha()
+ 3 SYSTEMPATH/BaseModel.php(779): CodeIgniter\BaseModel->trigger()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Registrar.php(18): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Registrar->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-30 23:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 23:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://192.168.50.177/grupo02/sistema/assets/css/menu.css">
-    <title>MENU</title>
+    <link rel="stylesheet" href="<?= base_url('css/menu.css') ?>">
+    <title>Menu | SisNap</title>
 </head>
 <body>
     <header>
         <div class="header">
             <div class="logo">
-                <img class="img-logo" src="http://192.168.50.177/grupo02/sistema/assets/img/logo-uni.png" alt="Univiçosa">
+                <img class="img-logo" src="<?= base_url('img/nap2.png') ?>" alt="Univiçosa">
             </div>
 
             <div class="cadastro">
-                <a href="http://192.168.50.177/grupo02/sistema/public/index.php/registrar">Cadastrar</a>
+                <a href="<?= base_url('index.php/usuarios') ?>"><img src="<?= base_url('img/Gerenciar-user.png') ?>" title="Gerenciar Usuários" alt="Gerenciar Usuários"></a>
             </div>
 
             <div class="sair">
-                <a href="http://192.168.50.177/grupo02/sistema/public">Sair</a>
+                <a href="<?= base_url('index.php/logout') ?>"><img src="<?= base_url('img/sair.png') ?>" title="Sair" alt="Sair"></a>
             </div>
         </div>
     </header>
@@ -31,12 +31,12 @@
             </div>
                 <div class="container-filho">
                     <div class="elemento-prontuario"> 
-                        <a href="http://192.168.50.177/grupo02/sistema/public/index.php/prontuario">Ficha de Prontuário</a>
-                        <a href="">Historico</a>  
+                        <a href="<?= base_url('historico_prontuario/create') ?>">Ficha de Prontuário</a>
+                        <a href="<?= base_url('index.php/historico_prontuario') ?>">Gerenciar | Prontuário</a>  
                     </div>
                     <div class="elemento-anamnese">
-                        <a href="http://192.168.50.177/grupo02/sistema/public/index.php/anamnese">Ficha de Anamnese</a>
-                        <a href="">Historico</a>            
+                        <a href="<?= base_url('historico_anamnese/create') ?>">Ficha de Anamnese</a>
+                        <a href="<?= base_url('index.php/historico_anamnese') ?>">Gerenciar | Anamnese</a>            
                     </div>
                 </div>     
             </div>

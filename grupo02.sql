@@ -47,19 +47,6 @@ CREATE TABLE `anamnase` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `cadastro`
---
-
-CREATE TABLE `cadastro` (
-  `nome` varchar(240) DEFAULT NULL,
-  `email` varchar(240) NOT NULL,
-  `senha` varchar(20) NOT NULL,
-  `matricula` int(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Estrutura para tabela `prontuario`
 --
 
@@ -79,7 +66,7 @@ CREATE TABLE `prontuario` (
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `nome` varchar(30) NOT NULL,
-  `usuario` varchar(16) NOT NULL,
+  `matricula` int(6) NOT NULL,
   `senha` varchar(255) NOT NULL,
   `perfil` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

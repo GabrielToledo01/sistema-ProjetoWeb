@@ -42,13 +42,35 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/','Login::index');
-$routes->get('/menu', 'Menu::index');
-$routes->get('/prontuario', 'Prontuario::index');
-$routes->get('/anamnese', 'Anamnese::index');
-$routes->get('/registrar', 'Registrar::index');
+$routes->match(['get', 'post'], '/', 'Login::index');
+//$routes->match(['get', 'post'], '/registrar', 'Registrar::index', ['filter' => 'auth:admin']);
+$routes->get('/menu', 'Menu::index', ['filter' => 'auth:admin,usuario']);
+$routes->match(['get', 'post'],'/prontuario', 'Prontuario::index', ['filter' => 'auth:admin,usuario']);
+//$routes->match(['get', 'post'],'/historico_prontuario', 'HistPront::index', ['filter' => 'auth:admin,usuario']);
+$routes->match(['get', 'post'],'/anamnese', 'Anamnese::index', ['filter' => 'auth:admin,usuario']);
+$routes->get('/logout', 'Logout::index', ['filter' => 'auth:admin,usuario']);
+
+//Grupo de rotas para gerenciamento de usuarios
+$adminFilter = 'auth:admin';
+$routes->group('usuarios', ['filter' => $adminFilter], static function($routes){
+    $routes->get( '', 'Usuarios::index');
+    $routes->match(['get', 'post'],'(:any)', 'Usuarios::$1');
+  });
 
 
+//Grupo de rotas para gerenciamento do prontuario
+$prontFilter = 'auth:admin, usuario';
+$routes->group('historico_prontuario', ['filter' => $prontFilter], static function($routes){
+    $routes->get( '', 'GerenciaPront::index');
+    $routes->match(['get', 'post'],'(:any)', 'GerenciaPront::$1');
+  });
+
+//Grupo de rotas para gerenciamento do anamnese
+$anamFilter = 'auth:admin, usuario';
+$routes->group('historico_anamnese', ['filter' => $anamFilter], static function($routes){
+    $routes->get( '', 'GerenciaAnam::index');
+    $routes->match(['get', 'post'],'(:any)', 'GerenciaAnam::$1');
+  });
 
 /*
  * --------------------------------------------------------------------

@@ -1,5 +1,3 @@
-OBS: Lembrar de colocar assets no public e mudar  o link do css das paginas html
-
 # CodeIgniter 4 Framework
 
 ## What is CodeIgniter?

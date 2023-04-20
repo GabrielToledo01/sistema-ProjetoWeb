@@ -4,55 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://192.168.50.177/grupo02/sistema/assets/css/login.css">
-    <title>LOGIN</title>
+    <link rel="stylesheet" href="<?= base_url('css/login.css') ?>">
+    <title>Login | SisNap</title>
 </head>
 <body>
 
-<div class="alinhamento-img">
-    <div class="logo">
-        <img class="img-logo" src="http://192.168.50.177/grupo02/sistema/assets/img/logo-uni.png" alt="Univiçosa">
-    </div>
-</div>
- 
-
 <div id="login" >
 
-<form class="card" action="" method="post">
+<form class="card"  method="post">
 
-    <div class="card-header">
+    <?php echo csrf_field();?>
 
-        <h2>Login</h2>
+        <div class="logo">
+            <img class="img-logo" src="<?= base_url('img/nap.png') ?>" alt="Univiçosa">
+        </div>
+ 
+        <div class="aviso">
+            <h4 style="color: red;">
+                <?php echo $msg ?? '' ?>
+            </h4>
+        </div>
 
-    </div>
 
     <div class="card-content">
-
+   
         <div class="card-content-area">
 
-            <label>Matricula</label>
+            <label>Matricula:</label>
 
-            <input type="email" id="usuario" name="inputEmail">
+            <input type="number" id="usuario" name="matricula" required="">
             
-
         </div>
 
         <div class="card-content-area">
 
-            <label>Senha</label>
+            <label>Senha:</label>
 
-            <input type="password" id="password" name="inputPassword">
+            <input type="password" id="password" name="senha" required="">
             
-
         </div>
 
     </div>
 
     <div class="card-footer">
 
-        <input type="submit" value="Entrar" class="submit"> 
-
-        <a href="http://192.168.50.177/grupo02/sistema/public/index.php/menu/">Entrar</a>
+        <button type="submit" class="submit">Entrar</button>
 
     </div>
 

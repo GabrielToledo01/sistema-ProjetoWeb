@@ -1,0 +1,149 @@
+body {
+
+  
+    padding: 0;
+  
+    margin: 0;
+  
+    display: flex;
+    width: 100%;
+    height: 700px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dcdbdb;
+  
+  
+}
+
+main{
+    width: 100%;
+    height: 1100px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.text h2{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+    color: #202020;
+    
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+    background-color:rgb(40, 114, 156);
+}
+
+th{
+    
+    background-color: rgb(40, 114, 156);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+
+    font-family: Arial, sans-serif;
+}
+
+td{
+    background-color: white;
+    padding: 10px;
+
+    font-family: Arial, sans-serif;
+}
+
+.header{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 135px;
+    height: 85px;
+}
+
+.logo .img-logo{
+    width: 90%;
+}
+
+.sair{
+    display: flex;
+    align-items: center;
+}
+
+.sair a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.sair a:hover{
+    font-size: 25px;
+    transition: 140ms;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.sair img{
+    width: 35px;
+    height: 35px;
+}
+
+
+.cadastro{
+    display: flex;
+    align-items: center;
+}
+
+.cadastro a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.cadastro a:hover{
+    font-size: 25px;
+    transition: 140ms;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table a{
+    
+    color: white;
+    
+    
+  
+    
+   
+    padding: 4px 10px;
+
+    
+   
+    cursor: pointer;
+}
+
+.table img{
+    width: 32px;
+    height: 32px;
+}

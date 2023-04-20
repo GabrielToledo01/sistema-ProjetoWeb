@@ -1,0 +1,246 @@
+body {
+
+  
+    padding: 0;
+  
+    margin: 0;
+  
+    display: flex;
+    width: 100%;
+    height: 700px;
+    flex-direction: column;
+    align-items: center;
+
+
+    background-color: #dcdbdb;
+  
+  
+}
+  
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+    background-color:rgb(40, 114, 156);
+}
+
+.header{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  width: 135px;
+  height: 85px;
+}
+
+.logo .img-logo{
+  width: 90%;
+}
+
+.cadastro{
+    display: flex;
+    align-items: center;
+}
+
+.cadastro a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.cadastro a:hover{
+    font-size: 25px;
+    transition: 140ms;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.sair{
+    display: flex;
+    align-items: center;
+}
+
+.sair a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.sair a:hover{
+    font-size: 25px;
+    transition: 140ms;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.sair img{
+  width: 35px;
+  height: 35px;
+}
+
+
+.container{
+
+    display: flex;
+    width: 100%;
+    height: 700px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+  
+  
+  #pr{
+    color: #ffffff;
+    text-align:center;
+    font-size: 200%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  #login {
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    height: 500px;
+  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  }
+  
+  .card {
+  
+    background-color: rgb(255, 255, 255);
+  
+    padding: 40px;
+  
+    border: 5px solid;
+  
+    border-color: rgb(40, 114, 156);
+  
+  
+    border-radius: 20px;
+  
+    width:280px;
+  
+  }
+
+
+  .aviso{
+    margin: 10px auto;
+    width: 250px;
+    height: 10px;
+  }
+  
+  .text_erro{
+    color: #910303;
+  }
+  
+  .card-header {
+  
+    opacity: 0.8;
+  
+    color: rgb(0, 0, 0);
+  
+  }
+  
+  .card-header::after {
+  
+    content: "";
+  
+    width: 218px;
+  
+    height: 1px;
+  
+    background-color: #000000;
+  
+    display: block;
+  
+    margin-top: -17px;
+  
+    margin-left: -5px;
+  
+  }
+  
+  .card-content label {
+  
+    color: rgb(0, 0, 0);
+  
+    font-size: 17px;
+  
+  
+  }
+  
+  .card-content-area {
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    padding:10px 0;
+  
+    
+  
+  }
+  
+  .card-content-area input {
+  
+    margin-top: 10px;
+  
+    outline: none;
+  
+    color: #000000;
+  
+  }
+
+  .usuario .admin p, label {
+    font: 1rem;
+  }
+
+  .usuario .admin input {
+    margin: 0.4rem;
+  }
+  
+  .card-footer {
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+  }
+  
+  .card-footer .submit{
+  
+    width: 100%;
+  
+    height: 40px;
+  
+    background-color: #008cff;
+  
+    border:none;
+
+    cursor: pointer;
+  
+    border-radius: 10px;
+  
+    color:#ffffff;
+  
+    margin: 10px 0;
+  
+  }
+
+  h2{
+    margin-bottom: 8px;
+  }
+  
